@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee shop locator</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>☕ Coffee Shop Locator</h1>
+    </header>
+
+    <main class="app-container">
+
+        <!-- Search bar -->
+         <section class="search-section">
+            <input 
+            type="text"
+            id="search-input"
+            placeholder="Search for a coffee shop by name or address..."
+            >
+            <button id="searchBtn">Search</button>
+         </section>
+
+         <!-- main content -->
+          <section class="content-section">
+
+            <!-- Map -->
+            <div id="map"></div>
+
+            <!-- sidebar -->
+            <aside class="results-panel">
+                <h2>Results</h2>
+                <ul id="resultList"></ul>
+            </aside>
+
+          </section>
+
+    </main>
+
+    <!-- Scripts-->
+     <script
+     src="https://maps.googleapis.com/maps/api/js?key=TU_API_KEY&libraries=places&callback=initMap"
+     async
+     ></script>
+    
+</body>
+</html>

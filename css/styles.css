@@ -1,0 +1,109 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #f5f7fa;
+  color: #333;
+}
+
+/* Header */
+.app-header {
+  background-color: #2f3e46;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+/* Contenedor principal */
+.app-container {
+  padding: 20px;
+}
+
+/* Barra de búsqueda */
+.search-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.search-section input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.search-section button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #3a5a40;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.search-section button:hover {
+  background-color: #344e41;
+}
+
+/* Layout mapa + resultados */
+.content-section {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+
+/* Mapa */
+#map {
+  height: 500px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Panel lateral */
+.results-panel {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  overflow-y: auto;
+  max-height: 500px;
+}
+
+.results-panel h2 {
+  margin-bottom: 15px;
+}
+
+/* Lista */
+#resultsList {
+  list-style: none;
+}
+
+#resultsList li {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+#resultsList li:hover {
+  background-color: #f0f0f0;
+}
+
+@media (max-width: 768px) {
+  .content-section {
+    grid-template-columns: 1fr;
+  }
+
+  #map {
+    height: 400px;
+  }
+}
