@@ -1,4 +1,3 @@
-/* Reset básico */
 * {
   margin: 0;
   padding: 0;
@@ -11,21 +10,17 @@ body {
   color: #333;
 }
 
-/* Header */
 .app-header {
   background-color: #2f3e46;
   color: white;
   padding: 20px;
   text-align: center;
-  font-size: 1.2rem;
 }
 
-/* Contenedor principal */
 .app-container {
   padding: 20px;
 }
 
-/* Barra de búsqueda */
 .search-section {
   display: flex;
   gap: 10px;
@@ -54,21 +49,18 @@ body {
   background-color: #344e41;
 }
 
-/* Layout mapa + resultados */
 .content-section {
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 20px;
 }
 
-/* Mapa */
 #map {
   height: 500px;
   border-radius: 12px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
-/* Panel lateral */
 .results-panel {
   background: white;
   padding: 15px;
@@ -82,7 +74,6 @@ body {
   margin-bottom: 15px;
 }
 
-/* Lista */
 #resultsList {
   list-style: none;
 }
